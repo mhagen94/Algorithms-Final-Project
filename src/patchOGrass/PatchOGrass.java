@@ -38,6 +38,7 @@ public class PatchOGrass {
     }
 
 
+
     /**
      * Searches through the field of grass with a brute-force approach and finds the n by m subfield
      * of grass with the highest average height.
@@ -50,7 +51,7 @@ public class PatchOGrass {
         double currentBest = 0;
         int besti = 0;
         int bestj = 0;
-        for (int i=0; i<=(field.length-n-1); i++){ // TODO: Fix these indices
+        for (int i=0; i<=(field.length-n); i++){
             for(int j=0; j<=(field[0].length-m-1); j++){
                 float currentPatch = sumGrass(field, i, j, n, m);
                 System.out.println(currentPatch);
